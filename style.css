@@ -1,49 +1,259 @@
-.product-detail {
-    padding: 40px;
-    background-color: #eeeeee;
+table,
+tr,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
     text-align: center;
 }
 
-.product-detail h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+div,
+h1,
+h2,
+h3,
+p {
+    text-align: center;
 }
 
-.product-detail ul {
-    list-style-type: none;
+th:hover {
+    background-color: antiquewhite;
 }
 
-.product-detail button {
-    background-color: #d65a31;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+td:hover {
+    background-color: aqua;
 }
 
-.product-detail button:hover {
-    background-color: #393e46;
+img {
+    opacity: 1;
+    border-radius: 8px;
 }
 
-.related-products {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background-color: white;
+img:hover {
+    opacity: 0.6;
 }
 
-.product img {
-    width: 200px;
-    height: auto;
+body {
+    background-image: url("assets/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.details-button {
-    background-color: #d65a31;
-    color: white;
-    padding: 10px 20px;
+.portrait {
+    max-width: 100%;
+    max-height: 350px;
+}
+
+@media (max-width: 600px) {
+    * {
+    font-size: 2vw;
+    margin: 2px;
+    }
+   }
+
+.main-header {
+    background-color: darkslategray;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 6px 10px rgb(89, 45, 45);
+}
+
+.header-info {
+    text-align: center;
+    color: rgb(59, 39, 38);
+}
+
+.header-info a {
+    padding: 0;
     text-decoration: none;
 }
-
-.details-button:hover {
-    background-color: #393e46;
-}
+.header-info a:hover {
+    background-color: transparent
+   }
+   .C1{
+    color: white;
+    font-size: 40px;
+   }
+   footer {
+    background-color: grey;
+   }
+   .main-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: whitesmoke;
+   }
+   .left-footer {
+    margin-right: auto;
+    margin-left: 40px;
+   }
+   .right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+   }
+   .center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+   .info-left {
+    text-align: left;
+    width: 100%;
+   }
+   nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+   }
+   a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+    float: left;
+   }
+   a:hover {
+    background-color: gainsboro;
+   }
+   body {
+    margin-top: 10%;
+   }
+   .main-header {
+    background-color: dimgray;
+    padding-left: 10px;
+    /* padding-top: 3px; */
+    /* padding-bottom: 3px; */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+   }
+   .header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    padding: 0px;
+    margin: 14px;
+    position: absolute;
+    left: 0px;
+   }
+   .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   .tab {
+    background-color: gainsboro;
+    width: 400px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+   }
+   h1.name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+   }
+   h2.price {
+    font-size: 38px;
+    color: black;
+   }
+   .list {
+    list-style-type: disc;
+    margin-bottom: 50px;
+    text-align: left;
+   }
+   .list li {
+    margin-top: 20px;
+    color: black;
+   }
+   hr {
+    height: 7px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(219, 84, 75);
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+   }
+   div.about {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: gainsboro;
+    width: 80%;
+    border-radius: 25px;
+   }
+   .about {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    width: 100%;
+   }
+   div.image-about {
+    margin-bottom: auto;
+    margin-top: auto;
+   }
+   img.about-us {
+    max-width: 100%;
+    max-height: 100%;
+   }
+   button {
+    background-color: rgba(219, 85, 75, 0.616);
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 20pt;
+    cursor: pointer;
+   }
+   button:hover {
+    transform: scale(1.2, 1.2);
+    background-color: rgb(219, 84, 75);
+    color: white;
+    opacity: 0.7;
+   }
+   button:active {
+    transform: translateY(4px);
+    box-shadow: 0px 4px gainsboro;
+   }
+   footer {
+    background-image: linear-gradient(rgb(150, 150, 150),rgb(138, 138, 138));
+   }
+   .fa-map-marked-alt, .fa-map-pin, .fa-address-book, .fa-phone-alt, .fa-instagram {
+    margin: 6px;
+   }
+   ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   }
+   .dropdown {
+    display: flex;
+    flex-direction: column;
+   }
+   .dropdown-content {
+    display: none;
+   }
+   .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: darkslategrey;
+   }
+   .dropdown-item:hover {
+    background-color:whitesmoke ;
+    cursor: pointer;
+   }
+   a.dropdown-item {
+    min-width: 160px;
+    text-align: left;
+   }
+   li.dropdown-item:hover a.dropdown-item {
+    text-align: left;
+    color: gainsboro;
+   }

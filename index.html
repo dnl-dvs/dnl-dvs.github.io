@@ -1,62 +1,114 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/html" href="price.html">
+    <link rel="stylesheet" type="text/html" href="about.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hatarika - Halaman Utama</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <header>
-        <div class="header-background">
+        <div class="main-header">
+            <h3 class="header-info">
+                <a href="index.html"> Car Dealership</a>
+            </h3>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Collection</a>
+                <a href="#home">Home</a>
+                <a href="#price">Price</a>
+                <a href="#about">About Us</a>
+            </nav>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="price.html">Price</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            <nav>
+                <div class="dropdown">
+                    <div>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="dropdown-content">
                         <ul>
-                            <li><a href="detail.html">Sepatu Casual</a></li>
-                            <li><a href="detail.html">Sepatu Olahraga</a></li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="#products">Products</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="#pricing-table">Pricing Table</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="#">Brands</a>
-                        <ul>
-                            <li><a href="detail.html">Nike</a></li>
-                            <li><a href="detail.html">Adidas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="#">Log in</a></li>
-                </ul>
+                    </div>
+                </div>
+                <a href="price.html">Price</a>
+                <a href="about.html">About Us</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="main-content">
-            <h1>Detail Sepatu Hatarika</h1>
-            <p>Sepatu yang nyaman dan bergaya.</p>
-            <a href="detail.html" class="details-button">Detail</a>
-        </section>
+        <div>
+            <section class="cover">
+                <div>
+                    <br>
+                    <h2><b>Best Sellers</b></h2>
 
-        <section class="about-company">
-            <h2>Tentang Kami</h2>
-            <p>Hatarika adalah brand sepatu yang menyediakan berbagai pilihan sepatu berkualitas.</p>
-        </section>
+                    <div>
+                        <img src="assets/img1.jpg" width="20%" alt="Audi Le Mans quattro" class="portrait" width="260px"
+                            height="auto">
+                        <p>Audi Le Mans quattro <br>Rp 7,5-8,5m</br>Acceleration 0-100 km/h: 3.9 seconds</br></p>
+                    </div>
+                    <br>
+                    <h2>Our Cars</h2>
+                    <div style="display:flex;justify-content:center;">
+                        <div>
+                            <img src="assets/img2.jpg" width="60%" alt="BMW M3" class="portrait" width="260px"
+                                height="auto">
+                            <p>BMW M3 <br>Rp 2,37m</br>Acceleration 0-100 km/h:3.9 seconds</p>
+                        </div>
 
-        <section class="features">
-            <h2>Fitur Website</h2>
-            <p>Website yang mudah digunakan untuk membeli sepatu dengan berbagai pilihan dan diskon menarik.</p>
-        </section>
-
-        <section class="testimonials">
-            <h2>Testimoni Pelanggan</h2>
-            <p>"Sepatu Hatarika sangat nyaman dan stylish!"</p>
-        </section>
+                        <div>
+                            <img src="assets/img3.jpg" width="50%" alt="Porsche 911" class="portrait" width="260px"
+                                height="auto">
+                            <p>Porsche 911 <br>Rp 5,6m</br>Acceleration 0-100 km/h: 3.7 to 4.2 seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
+    <br>
+
     <footer>
-        <p>Hatarika | Daftar Sepatu: <a href="detail.html">Sepatu Casual</a>, <a href="detail.html">Sepatu Olahraga</a></p>
-        <p>Sosial Media: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        <div class="center-footer">
+            <div class="main-footer">
+                <div class="left-footer">
+                    <h3 class="info-left"><i class="fas fa-mapmarked-alt"></i>
+                        <b>Address</b></h3>
+                    <p class="info-left"><i class="fas fa-map-pin"></i>Tukad Yeh Aya
+                        Street No. 45, Renon, Denpasar</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="info-right"><i class="fas fa-address-book"></i> <b>Contacts
+                        </b></h3>
+                    <p class="info-right"><i class="fas fa-phone"></i>Phone:
+                        082121212121</p>
+                    <p class="info-right"><i class="fab fa-instagram"></i>Instagram :
+                        @cardealerships</p>
+                </div>
+            </div>
+
+            <div class="main-footer">
+                <p class="info-center">Copyright
+                    &copy; 2021 Designed by Car Dealership</p>
+            </div>
+        </div>
     </footer>
+
+
 </body>
+
 </html>
